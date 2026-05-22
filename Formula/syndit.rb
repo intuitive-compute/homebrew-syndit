@@ -2,7 +2,7 @@ class Syndit < Formula
   desc "CLI and MCP runtime for the syndit agent protocol"
   homepage "https://github.com/intuitive-compute/syndit"
   url "https://github.com/intuitive-compute/syndit/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "d71f35362245adcc4909a7e66e464eabf8e92461f7c34fc93cd07902074ffa0e"
+  sha256 "209503759288195716978d38ab0f4738e733748be7cac02ca915813588a8e324"
   license "MIT OR Apache-2.0"
   head "https://github.com/intuitive-compute/syndit.git", branch: "main"
 
