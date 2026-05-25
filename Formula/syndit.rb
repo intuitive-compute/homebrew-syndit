@@ -1,29 +1,29 @@
 class Syndit < Formula
   desc "CLI and MCP runtime for the syndit agent protocol"
   homepage "https://github.com/intuitive-compute/syndit"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
   head "https://github.com/intuitive-compute/syndit.git", branch: "main"
 
   # Source fallback for archs without a prebuilt binary.
-  url "https://github.com/intuitive-compute/syndit/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "a59416610597ebecf5ada3a0c83c85edabc40c85e70945557cddcf361a62d494"
+  url "https://github.com/intuitive-compute/syndit/archive/refs/tags/v0.2.1.tar.gz"
+  sha256 "f911a69e476eac0cdcbcf0855a918a5037b27948f113166b9fcb2101bc710b3c"
 
   on_macos do
     on_arm do
-      url "https://github.com/intuitive-compute/syndit/releases/download/v0.2.0/syndit-v0.2.0-aarch64-apple-darwin.tar.gz"
-      sha256 "6b1892b1558fc25ba9d7ba1975d956d579cd55cb75a6a0ce67a73a2ea6747422"
+      url "https://github.com/intuitive-compute/syndit/releases/download/v0.2.1/syndit-v0.2.1-aarch64-apple-darwin.tar.gz"
+      sha256 "589c8d4b0dd5960dd9643cf12244b4e731b375a726844c81dd042f540ac0ed9f"
     end
     on_intel do
-      url "https://github.com/intuitive-compute/syndit/releases/download/v0.2.0/syndit-v0.2.0-x86_64-apple-darwin.tar.gz"
-      sha256 "9725062d7889070e00f32d4578f6416e60918c818d4061259174e1ef962a005d"
+      url "https://github.com/intuitive-compute/syndit/releases/download/v0.2.1/syndit-v0.2.1-x86_64-apple-darwin.tar.gz"
+      sha256 "3e69ca18ae5623094dd13e85eb960b9f27264468359a2e707eeea7aaf062f2d8"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/intuitive-compute/syndit/releases/download/v0.2.0/syndit-v0.2.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "67a68e7550bf7f058ec33a03beee22fa1e97560acc85552b9ff678f76c5b803c"
+      url "https://github.com/intuitive-compute/syndit/releases/download/v0.2.1/syndit-v0.2.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "8abf575b67c5ea940fec1cccc7df5e4170c230a484a9cc3d9968bdc67e896e08"
     end
     on_arm do
       depends_on "rust" => :build
